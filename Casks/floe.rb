@@ -2,8 +2,7 @@ cask "floe" do
   version "0.3.0"
   sha256 "3d452b3a99786cfcb5d81fe66ef0a5a26fb38c9d2bf8afd8700e9e9a27493cd0"
 
-  url "https://github.com/thaw-app/Floe/releases/download/#{version}/Floe.dmg",
-      verified: "github.com/thaw-app/Floe/"
+  url "https://github.com/thaw-app/Floe/releases/download/#{version}/Floe.dmg"
   name "Floe"
   desc "Open source launcher for macOS"
   homepage "https://github.com/thaw-app/Floe/"
@@ -19,7 +18,7 @@ cask "floe" do
   # That is why the pinned version above needs no routine bumping: it is the
   # bootstrap version for a fresh machine, nothing more.
   auto_updates true
-  depends_on macos: ">= :tahoe"
+  depends_on macos: :tahoe
 
   app "Floe.app"
 
